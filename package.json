@@ -1,6 +1,7 @@
 {
   "name": "storybook-fun-2",
   "version": "0.1.0",
+  "homepage": "https://holtjonathan.github.io/storybook-fun-2",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -18,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.7.14",
+    "gh-pages": "^6.3.0"
   }
 }
