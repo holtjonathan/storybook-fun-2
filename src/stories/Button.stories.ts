@@ -38,6 +38,13 @@ export const Secondary: Story = {
   },
 };
 
+export const SomethingElse: Story = {
+  args: {
+    label: 'Some other button',
+  },
+};
+
+
 export const Large: Story = {
   args: {
     size: 'large',
